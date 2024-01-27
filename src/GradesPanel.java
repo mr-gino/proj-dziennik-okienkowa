@@ -32,7 +32,9 @@ public class GradesPanel extends JFrame {
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO
+                AddGradePanel addGradePanel = new AddGradePanel(loginSystem,gradesReader);
+                addGradePanel.setVisible(true);
+                refreshTable();
             }
         });
 
