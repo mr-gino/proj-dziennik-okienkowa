@@ -51,7 +51,9 @@ public class LoginPanel extends JFrame {
                         studentPanel.setVisible(true);
                         dispose();
                     } else {
-
+                        AdminPanel adminPanel = new AdminPanel(loginSystem, currentUser);
+                        adminPanel.setVisible(true);
+                        dispose();
                     }
                 }
             }
