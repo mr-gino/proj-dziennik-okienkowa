@@ -41,7 +41,9 @@ public class GradesPanel extends JFrame {
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO
+                DelGradePanel delGradePanel = new DelGradePanel(loginSystem);
+                delGradePanel.setVisible(true);
+                refreshTable();
             }
         });
 
