@@ -38,7 +38,8 @@ public class TeacherPanel extends JFrame {
         presentButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO
+                PresentPanel presentPanel = new PresentPanel(loginSystem);
+                presentPanel.setVisible(true);
             }
         });
 
