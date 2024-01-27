@@ -63,7 +63,8 @@ public class GradesPanel extends JFrame {
         avgButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO
+                AvgGrades avgGrades = new AvgGrades(loginSystem);
+                avgGrades.setVisible(true);
             }
         });
     }
