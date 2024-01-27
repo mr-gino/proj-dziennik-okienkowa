@@ -35,7 +35,8 @@ public class AdminPanel extends JFrame {
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO
+                AddUserPanel addUserPanel = new AddUserPanel(loginSystem);
+                addUserPanel.setVisible(true);
             }
         });
 
