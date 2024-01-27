@@ -48,7 +48,8 @@ public class PresentPanel extends JFrame {
         changeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO
+                ChangePresentPanel changePresentPanel = new ChangePresentPanel(loginSystem);
+                changePresentPanel.setVisible(true);
             }
         });
 
