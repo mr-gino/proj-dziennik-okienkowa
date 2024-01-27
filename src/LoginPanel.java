@@ -41,7 +41,16 @@ public class LoginPanel extends JFrame {
                 if (currentUser == null || !loginSystem.authenticateUser(currentUser, password)) {
                     outLabel.setText("Niepoprawny login lub hasło.");
                 } else {
+                    outLabel.setText("Zalogowano pomyślnie.");
+                    if ("nauczyciel".equals(currentUser.getPosition())) {
+                        TeacherPanel teacherPanel = new TeacherPanel(loginSystem, currentUser);
+                        teacherPanel.setVisible(true);
+                        dispose();
+                    } else if("uczen".equals(currentUser.getPosition())) {
 
+                    } else {
+
+                    }
                 }
             }
         });
