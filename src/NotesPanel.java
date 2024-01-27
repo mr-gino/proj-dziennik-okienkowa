@@ -27,7 +27,8 @@ public class NotesPanel extends JFrame {
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO
+                AddNotePanel addnotepanel = new AddNotePanel(loginSystem);
+                addnotepanel.setVisible(true);
             }
         });
 
