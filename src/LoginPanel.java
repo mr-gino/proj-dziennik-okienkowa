@@ -47,7 +47,9 @@ public class LoginPanel extends JFrame {
                         teacherPanel.setVisible(true);
                         dispose();
                     } else if("uczen".equals(currentUser.getPosition())) {
-
+                        StudentPanel studentPanel = new StudentPanel(loginSystem,currentUser);
+                        studentPanel.setVisible(true);
+                        dispose();
                     } else {
 
                     }
