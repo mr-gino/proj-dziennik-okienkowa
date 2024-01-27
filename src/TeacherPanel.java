@@ -30,18 +30,22 @@ public class TeacherPanel extends JFrame {
         gradesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                GradesPanel gradesPanel = new GradesPanel(loginSystem);
+                gradesPanel.setVisible(true);
             }
         });
 
         presentButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //TODO
             }
         });
 
         notesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //TODO
             }
         });
 
